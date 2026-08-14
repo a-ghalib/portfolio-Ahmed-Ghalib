@@ -11,14 +11,16 @@
     <header>
       <nav>
         <a href="./index.html" class="logo">
-          <img src="./imgs/Logo.png" alt="Logo">
+          <img src="./imgs/Logo.png" alt="Logo" />
         </a>
         <div class="container">
           <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <button class="menu-btn" id="menu-btn">
@@ -26,20 +28,22 @@
           <span></span>
           <span></span>
         </button>
+        <!-- Mobile -->
       </nav>
       <div class="mob">
         <div class="container" id="show-menu">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About me</a></li>
-            <li><a href="#section">Section</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </div>
       </div>
     </header>
     <section class="home" id="home">
       <div class="container">
+        <!-- Text -->
         <div class="content-container">
           <h3><i class="fa-solid fa-person-burst"></i>Hi, I'm</h3>
           <h1>Ahmed <span>Ghalib</span></h1>
@@ -49,7 +53,7 @@
             applications.
           </p>
           <div class="btns">
-            <a href="#" class="btn">View My Work</a>
+            <a href="#" class="btn">View My Work <i class="fa-solid fa-arrow-right"></i></a>
             <a href="#" class="btn"
               >Contact Me <i class="fa-regular fa-envelope"></i
             ></a>
@@ -63,6 +67,7 @@
             </ul>
           </div>
         </div>
+        <!-- Image -->
         <div class="image-container">
           <img src="./imgs/img-01.png" alt="Ahmed Ghalib" />
           <div class="experience">
@@ -126,7 +131,7 @@
         <img src="./imgs/img-02.png" alt="Ahmed Ghalib" />
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="container">
         <div class="skills-text">
           <div class="skill-text">
@@ -176,12 +181,168 @@
           <div class="card hov">
             <img src="./imgs/TypeScript.png" alt="TypeScript" />
             <h3>TypeScript</h3>
-            <span>
-            </span>
+            <span> </span>
           </div>
         </div>
       </div>
     </section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="project-text">
+          <a href="#" class="link-a">My Skills</a>
+          <h3>Some Things l've Built</h3>
+        </div>
+        <div class="cards-project">
+          <div class="card hov">
+            <img src="./imgs/Dashboard.jpg" alt="projet" />
+            <div class="card-text">
+              <span>Dashboard</span>
+              <h3>Admin Dashboard</h3>
+              <p>
+                A modern admin dashboard bulit with React.js Tailwind CSS and
+                Recharts.
+              </p>
+            </div>
+            <div class="links">
+              <a href="#"
+                >Live Demo <i class="fa-solid fa-arrow-turn-up"></i
+              ></a>
+              <a href="#">Github <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="card hov">
+            <img src="./imgs/img-desg.jpg" alt="projet" />
+            <div class="card-text">
+              <span>E-Commerce</span>
+              <h3>E-Commerce Store</h3>
+              <p>
+                Full featured online store with cart, checkout and order
+                management.
+              </p>
+            </div>
+            <div class="links">
+              <a href="#"
+                >Live Demo <i class="fa-solid fa-arrow-turn-up"></i
+              ></a>
+              <a href="#">Github <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="card hov">
+            <img src="./imgs/PortfolioAhmedGhalib.png" alt="projet" />
+            <div class="card-text">
+              <span>Portfolio</span>
+              <h3>Developer Portfolio</h3>
+              <p>
+                A personal portfolio website built with Next.js and Tailwind
+                CSS.
+              </p>
+            </div>
+            <div class="links">
+              <a href="#"
+                >Live Demo <i class="fa-solid fa-arrow-turn-up"></i
+              ></a>
+              <a href="#">Github <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="info-experience">
+          <a href="#" class="link-a">Experience</a>
+          <h3>My Journey</h3>
+          <div class="text-info">
+            <div>
+              <span class="One"></span></span>
+              <h4>Frontend Developer <span>Freelance</span></h4>
+              <p>Bulding modern web application for clients around the world</p>
+            </div>
+            <div>
+              <p>2023 - Present</p>
+            </div>
+          </div>
+          <div class="text-info">
+            <div>
+              <span class="One"></span></span>
+              <h4>Junior Developer <span>Tech Solutions</span></h4>
+              <p>Worked on various projects useing React and JavScript</p>
+            </div>
+            <div>
+              <p>2022 - 2023</p>
+            </div>
+          </div>
+          <div class="text-info">
+            <div>
+              <span class="One"></span>
+              <h4>Learning & Building</h4>
+              <p>Focused on lerning web technologies and building projects</p>
+            </div>
+            <div>
+              <p>2021 - 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="education">
+          <a href="#" class="link-a">Education</a>
+          <h3>Education</h3>
+          <div class="info-education">
+            <a href="#">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <div class="text-education">
+              <h3>Computer Science</h3>
+              <span>Cairo University</span>
+              <p>Bachelor's degree in Computer Science</p>
+            </div>
+          </div>
+          <div class="info-education">
+            <a href="#">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <div class="text-education">
+              <h3>Computer Science</h3>
+              <span>Cairo University</span>
+              <p>Bachelor's degree in Computer Science</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-container">
+          <h3>Lest's Work Together</h3>
+          <p>
+          I'm currently available for freelance work. <br>
+          if you have a project in mind, let's talk!
+          </p>
+          <a href="#" class="btn">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="info-contact">
+          <div class="text-contact">
+            <span><i class="fa-regular fa-envelope"></i> AhmedGhalib@mail.com</span>
+            <span><i class="fa-solid fa-phone"></i> +20123456789</span>
+            <span><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</span>
+          </div>
+          <div>
+            <p>Follow Me</p>
+            <div class="social-contact">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <a href="#home"><img src="./imgs/Logo.png" alt="Logo"></a>
+        <p> © All rights reserved Ahmed <span>Ghalib</span> 2026 </p>
+        <p>Made with <i class="fa-regular fa-heart"></i></p>
+      </div>
+    </footer>
     <script src="./Js/min.js"></script>
   </body>
 </html>
