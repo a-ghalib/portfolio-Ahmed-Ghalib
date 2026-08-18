@@ -27,16 +27,16 @@ const products = [
     linkTwo: "Github",
   },
 ];
-let icons = document.querySelector(".cards");
-let arrIcons = [
+let skills = document.querySelector(".cards");
+let skillCard = [
   { image: "./imgs/HTML.png", title: "HTML", info: "" },
-  { image: "./imgs/CSS.png", title: "CSS", info: "" },
-  { image: "./imgs/JS.jpg", title: "JavaScript", info: "" },
-  { image: "./imgs/REACT.png", title: "React.js", info: "" },
-  { image: "./imgs/Next.js.jpg", title: "Next.js", info: "" },
-  { image: "./imgs/Tailwind.png", title: "Tailwind", info: "" },
-  { image: "./imgs/Git.png", title: "Git", info: "" },
-  { image: "./imgs/TypeScript.png", title: "TypeScript", info: "" },
+  { image: "/imgs/CSS.png", title: "CSS", info: "" },
+  { image: "/imgs/JS.jpg", title: "JavaScript", info: "" },
+  { image: "/imgs/REACT.png", title: "React.js", info: "" },
+  { image: "/imgs/Next.js.jpg", title: "Next.js", info: "" },
+  { image: "/imgs/Tailwind.png", title: "Tailwind", info: "" },
+  { image: "/imgs/Git.png", title: "Git", info: "" },
+  { image: "/imgs/TypeScript.png", title: "TypeScript", info: "" },
 ];
 function menuBtn() {
   mobileMenu.addEventListener("click", () => {
@@ -45,7 +45,6 @@ function menuBtn() {
   });
 }
 menuBtn();
-
 products.forEach((product) => {
   const card = document.createElement("div");
   card.innerHTML = `
@@ -65,14 +64,13 @@ products.forEach((product) => {
           </div>`;
   cards.appendChild(card);
 });
-
-arrIcons.map((icon) => {
+skillCard.map((skill) => {
   const card = document.createElement("div");
   card.innerHTML = `
           <div class="card hov">
-            <img src="${icon.image}" alt="${icon.title}"/>
-            <h3>${icon.title}</h3>
+            <img src="${skill.image}" alt="${skill.title}"/>
+            <h3>${skill.title}</h3>
             <span></span>
           </div> `;
-  icons.appendChild(card);
+  skills.appendChild(card);
 });
