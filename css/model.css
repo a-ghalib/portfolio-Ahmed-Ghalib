@@ -164,7 +164,6 @@ header {
     }
   }
 }
-/* Section */
 .home {
   padding: 20px 80px;
   margin-top: 100px;
@@ -489,10 +488,16 @@ header {
           text-align: start;
           margin-bottom: 10px;
           a {
+            padding: 3px 5px;
             margin-left: 15px;
+            border-radius: 5px;
             font-size: 1rem;
             font-weight: 500;
             color: var(--AccentPurple-color);
+            transition: 0.3s ease;
+          } a:hover {
+            color: var(--primaryText-color);
+            background-color: var(--brightPurple-color);
           }
           a:last-child {
             color: var(--primaryText-color);
