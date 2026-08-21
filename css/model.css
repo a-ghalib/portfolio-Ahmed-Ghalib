@@ -86,6 +86,7 @@ header {
       align-items: center;
       ul {
         li {
+          position: relative;
           a {
             color: var(--primaryText-color);
             transition: color ease 0.3s;
@@ -93,7 +94,7 @@ header {
           &:not(:last-child) {
             margin-right: 9px;
           }
-         a::after {
+          a::after {
             content: "";
             position: absolute;
             border-bottom: 1px solid var(--secondaryText-color);
@@ -102,11 +103,10 @@ header {
             left: 0;
             transition: 0.3s ease;
           }
-          a:hover {
+          a:hover, a:hover::after {
             color: var(--secondaryText-color);
-          }
-          a::after:hover {
             width: 100%;
+          }
         }
       }
     }
@@ -174,6 +174,7 @@ header {
     }
   }
 }
+/* Section */
 .home {
   padding: 20px 80px;
   margin-top: 100px;
@@ -219,7 +220,6 @@ header {
           font-size: 12px;
           font-weight: bold;
           transition: ease-in-out 0.3s;
-
           i {
             margin-left: 5px;
             border: none;
@@ -245,7 +245,6 @@ header {
           color: var(--secondaryText-color);
           font-size: 1.5rem;
           margin-right: 10px;
-
           transition: ease-in-out 0.3s;
           i {
             transform: scale(1);
@@ -506,8 +505,8 @@ header {
             color: var(--AccentPurple-color);
             transition: 0.3s ease;
           } a:hover {
-            color: var(--primaryText-color);
             background-color: var(--brightPurple-color);
+            color: var(--primaryText-color);
           }
           a:last-child {
             color: var(--primaryText-color);
