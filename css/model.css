@@ -93,9 +93,18 @@ header {
           &:not(:last-child) {
             margin-right: 9px;
           }
-          a:hover {
+         a::after {
+            content: "";
+            position: absolute;
             border-bottom: 1px solid var(--secondaryText-color);
+            width: 0%;
+            top: 25px;
+            left: 0;
+            transition: 0.3s ease;
+          }
+          a:hover, a:hover::after {
             color: var(--secondaryText-color);
+            width: 100%;
           }
         }
       }
