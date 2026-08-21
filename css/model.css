@@ -102,10 +102,11 @@ header {
             left: 0;
             transition: 0.3s ease;
           }
-          a:hover, a:hover::after {
+          a:hover {
             color: var(--secondaryText-color);
-            width: 100%;
           }
+          a::after:hover {
+            width: 100%;
         }
       }
     }
